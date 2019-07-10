@@ -1,5 +1,6 @@
 const isStartSmallerThanEnd = require('../main').isStartSmallerThanEnd;
 const isInRangeOf1To1000 = require('../main').isInRangeOf1To1000;
+const getMultiplicationTable = require('../main').getMultiplicationTable;
 const createMultiplicationTable = require('../main').createMultiplicationTable;
 
 it ('should return true when start number is smaller than end number', () => {
@@ -23,6 +24,7 @@ it ('should return true when start number and end number is in range of 1 to 100
 it ('should return true when start number and end number is in range of 1 to 1000', () => {
     expect(isInRangeOf1To1000(1001, 500)).toBe(false);
 });
+
 
 
 it ('should create Multiplication Table', () => {
